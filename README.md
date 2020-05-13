@@ -1,5 +1,3 @@
-#### Thank you for using sparrow.
+#### Shantao's Personal Website
 
-For getting started, visit: https://prium.github.io/twbs-sparrow/documentation/getting-started.html
-
-Happy editing!
+Built using HTML/CSS, JavaScript, Bootstrap, and a Bootstrap UI Kit from Sparrow.
