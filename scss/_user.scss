@@ -3,3 +3,8 @@
 // user.scss
 //
 // Place your own sparrow CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+// Change the selection color
+::selection {
+    background-color: #ffac33;
+}
