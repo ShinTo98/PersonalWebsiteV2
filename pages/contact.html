@@ -123,14 +123,14 @@
                     <a class="btn btn-dark btn-sm" href="https://www.instagram.com/wheredoessygo/" target="_blank"><span class="fab fa-instagram" data-fa-transform="grow-6"></span></a>
                   </div>
                   <h3 class="mt-7">Give me a shout</h3>
-                  <form class="zform mt-4" method="POST">
-                    <input class="form-control border-300" type="hidden" name="to" value="shantao.yi@gmail.com">
-                    <input class="form-control border-300 mt-3" type="text" placeholder="Your Name" aria-label="Text input with dropdown button">
-                    <input class="form-control border-300 mt-3" type="text" placeholder="Email Address" aria-label="Text input with dropdown button">
-                    <textarea class="form-control border-300 mt-3" rows="11" placeholder="Your Message" required></textarea>
+                  <form name="gform" id="gform" class="zform mt-4" action="https://docs.google.com/forms/d/e/1FAIpQLScdZdiQROe6owMo2VidNrlenKvyECvQye0LeyfbOj9-jyw5-w//formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    <input class="form-control border-300 mt-3" name="entry.329039206" id="entry.329039206" type="text" placeholder="Your Name" aria-label="Text input with dropdown button">
+                    <input class="form-control border-300 mt-3" name="entry.505034981" id="entry.505034981" type="text" placeholder="Email Address" aria-label="Text input with dropdown button">
+                    <textarea class="form-control border-300 mt-3" name="entry.986084696" id="entry.986084696" rows="11" placeholder="Your Message" required></textarea>
                     <button class="btn btn-block btn-dark mt-4" type="submit">Send<span class="fa fa-paper-plane ml-1"></span></button>
                     <div class="zform-feedback mt-4"></div>
                   </form>
+                  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
           </div>
@@ -217,6 +217,13 @@
     <script src="assets/js/rellax.min.js"></script>
     <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut();
+  $('#gform').prepend('<p class="text-sans-serif font-weight-bold mb-0 fs-1 fs-sm-0 fs-lg-0 fs-xl-1"><span class="font-weight-normal text-600">Thank you for messaging me! Your response has been received.</span></p>');
+  });
+</script>
   </body>
 
 </html>
